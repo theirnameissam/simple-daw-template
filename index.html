@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DAW</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="top-bar">
+        <p>Simple DAW</p>
+    </div>
+    <div id="inst-con">
+        <span class="inst">
+            <span class="inst-name">
+                Kick
+            </span>
+            <span class="inst-controls">
+                <i id="vol-icon" class="material-icons">volume_up</i>
+                <input type="range" step="1" min="0" max="10">
+            </span>
+            <audio src="audio/kick.wav" id="kick"></audio>
+        </span>
+        <span class="inst">
+            <span class="inst-name">
+                Snare
+            </span>
+            <span class="inst-controls">
+                <i id="vol-icon" class="material-icons">volume_up</i>
+                <input type="range" step="1" min="0" max="10">
+            </span>
+            <audio src="audio/snare.wav" id="snare"></audio>
+        </span>
+        <span class="inst">
+            <span class="inst-name">
+                Clap
+            </span>
+            <span class="inst-controls">
+                <i id="vol-icon" class="material-icons">volume_up</i>
+                <input type="range" step="1" min="0" max="10">
+            </span>
+            <audio src="audio/clap.wav" id="clap"></audio>
+        </span>
+        <span class="inst">
+            <span class="inst-name">
+                Hi-Hat
+            </span>
+            <span class="inst-controls">
+                <i id="vol-icon" class="material-icons">volume_up</i>
+                <input type="range" step="1" min="0" max="10">
+            </span>
+            <audio src="audio/hat.wav" id="hihat"></audio>
+        </span>
+    </div>
+    <span id="record">
+        <i class="material-icons md-24">fiber_manual_record</i>
+    </span>
+    <span id="stop">
+        <i class="material-icons md-24">stop</i>
+    </span>
+    <span id="tracks-title">
+        My Tracks
+    </span>
+    <div id="tracks">
+
+    </div>
+    <template id="track-template">
+        <div class="track">
+        <span class="track-name">
+        </span>
+        <span class="track-toggle">
+            <i class="material-icons md-24">play_arrow</i>
+            <audio src="" ></audio>
+        </span>
+        <span class="tack-download">
+            <a href="" download><button>Download</button></a>
+        </span>
+        <span class="track-record">
+            <i class="material-icons md-24">fiber_manual_record</i>
+        </span>
+    </div>
+    </template>
+    <audio id="feedback"></audio>
+    <script src="js/drumpad.js"></script>
+    <script src="js/recorder.js"></script>
+</body>
+</html>

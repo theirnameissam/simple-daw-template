@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom*/
+body
+{
+    background: #333333;
+    width: 960px;
+    margin: 0 auto;
+    display: block;
+    min-height: 100%;
+}
+
+div#top-bar
+{
+    height: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    width: 100%;
+    background: #00adb5;
+    color: #fafafa;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+div#inst-con
+{
+    width: 100%;
+    display: block;
+}
+
+span.inst
+{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fafafa;
+    height: 31px;
+}
+.inst-name
+{
+    float: left;
+    width: 20%;
+    display: block;
+    background: red;
+    height: 30px;
+    text-align: center;
+    color: #fafafa;
+    line-height: 25px;
+}
+
+.inst-controls 
+{
+    float: right; 
+    background: orange;
+    width: 80%;
+    display: block;
+    height: 30px;
+}
+input[type=range]
+{
+    float: right;
+    width: 92%;
+    margin-top: 5px;
+}
+input[type=range]::-moz-range-track {
+  background-color: green;
+}
+
+input[type=range]::-moz-range-progress {
+  background-color: red;
+}
+
+input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+input[type=range]::-moz-range-thumb {
+  background-color: black;
+  border: black;
+}
+
+#vol-icon
+{
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+#record
+{
+    cursor: pointer;
+    float: left;
+    background: #f38181;
+    color: #fafafa;
+    font-size: 30px;
+    height: 35px;
+    width: 50%;
+    text-align: center;
+}
+
+.recording
+{
+    color: red;
+}
+#stop
+{
+    cursor: pointer;
+    float: right;
+    background: #fce38a;
+    text-align: center;
+    color: #fafafa;
+    font-size: 30px;
+    height: 35px;
+    width: 50%;
+}
+
+.md-24
+{
+    font-size: 35px !important;
+}
+
+#tracks-title
+{
+    width: 100%;
+    background: #00adb5;
+    color: #fafafa;
+    font-size: 30px;
+    text-align: center;
+    height: 35px;
+    line-height: 30px;
+    display: block;
+    float: left;
+}
+
+div.track
+{
+    width: 100%;
+    float: left;
+    background: white;
+    height: 30px;
+    display: block;
+    line-height: 20px;
+}
+span.track-name
+{
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #fafafa;
+    background: #00adb5;
+    height: 30px;
+}
+
+span.track-toggle
+{
+    float: left;
+    width: 15%;
+    color: #fafafa;
+    text-align: center;
+    background: #00adb5;
+    height: 30px;
+    cursor: pointer;
+}
+
+span.tack-download
+{
+    float: left;
+    width: 35%;
+    text-align: center;
+    background: #00adb5;
+    height: 30px;
+}
+
+span.track-record
+{
+    float: right;
+    width: 30%;
+    background: #00adb5;
+    text-align: center;
+    color: #fafafa;
+    height: 30px;
+    cursor: pointer;
+}
